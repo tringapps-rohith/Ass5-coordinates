@@ -35,12 +35,7 @@ class Coordinate implements Cloneable
                 l.info("Enter x2 and y2 coordinates\n");
                 String x1=sin.next();
                 String y1=sin.next();
-                boolean res=c1.check(x1,y1);
-                if(res==true)
-                {
-                        l.info("Same\n");
-                }
-                else
-                        l.info("Not same\n");
+                l.info(c1.check(x1,y1));
+              
         }
 }
