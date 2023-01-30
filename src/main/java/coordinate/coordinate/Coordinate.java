@@ -36,11 +36,6 @@ class Coordinate implements Cloneable
                 String x1=sin.next();
                 String y1=sin.next();
                 boolean res=c1.check(x1,y1);
-                if(res==true)
-                {
-                        l.info("Same\n");
-                }
-                else
-                        l.info("Not same\n");
+                l.log(LEVLE.INFO,()-> +res);
         }
 }
