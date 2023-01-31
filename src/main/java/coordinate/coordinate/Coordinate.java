@@ -2,6 +2,7 @@ package coordinate.coordinate;
 
 import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.*;
 class Coordinate implements Cloneable
 {
         private String x;
@@ -25,7 +26,7 @@ class Coordinate implements Cloneable
         public static void main(String [] args) throws CloneNotSupportedException
         {
                 Scanner sin=new Scanner(System.in);
-				Logger l=Logger.getLogger("com.api.jar");
+		Logger l=Logger.getLogger("com.api.jar");
                 l.info("Enter x1 coordinate\n");
                 String x=sin.next();
                 l.info("Enter y1 coordinate\n");
@@ -36,6 +37,7 @@ class Coordinate implements Cloneable
                 String x1=sin.next();
                 String y1=sin.next();
                 boolean res=c1.check(x1,y1);
-                l.log(LEVLE.INFO,()-> +res);
+                l.log(Level.INFO,()-> res);		
+				
         }
 }
