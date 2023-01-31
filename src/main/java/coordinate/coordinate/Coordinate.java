@@ -3,7 +3,7 @@ package coordinate.coordinate;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.*;
-class Coordinate implements Cloneable
+class Coordinate implements cloneable
 {
         private String x;
         private String y;
