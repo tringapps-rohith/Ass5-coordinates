@@ -3,7 +3,7 @@ package coordinate.coordinate;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.*;
-class Coordinate implements cloneable
+class Coordinate implements Cloneable
 {
         private String x;
         private String y;
@@ -19,9 +19,9 @@ class Coordinate implements cloneable
         {
                 return x.equals(x1) && y.equals(y1);
         }
-        public Object clone() throws CloneNotSupportedException
+        public Object cloning() throws CloneNotSupportedException
         {
-                return super.clone();
+                return super.cloning();
         }
         public static void main(String [] args) throws CloneNotSupportedException
         {
@@ -32,7 +32,7 @@ class Coordinate implements cloneable
                 l.info("Enter y1 coordinate\n");
                 String y=sin.next();
                 Coordinate c=new Coordinate(x,y);
-                Coordinate c1=(Coordinate)c.clone();
+                Coordinate c1=(Coordinate)c.cloning();
                 l.info("Enter x2 and y2 coordinates\n");
                 String x1=sin.next();
                 String y1=sin.next();
