@@ -37,7 +37,8 @@ class Coordinate implements Cloneable
                 String x1=sin.next();
                 String y1=sin.next();
                 boolean res=c1.check(x1,y1);
-                l.log(Level.INFO,()-> res);		
+               	String output = Boolean.toString(res);
+                l.log(Level.INFO,()-> output);		
 				
         }
 }
